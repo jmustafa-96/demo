@@ -2,25 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="StyleSheet" href="Card.css">
-    <title>id card</title>
-</head>
-<body>
-    <div class="card">
-        <img src="C:\Users\hatim\Desktop\wed photos\6808266d-1a2c-4399-b574-558b770039f2.jpg" alt="man" />
-        <div class="desc">
-            <h3>Mustafa jambughoda</h3>
-            <p>Web developer</p>
-        </div>
-    </div>
-    <div class="card">
-        <img src="C:\webo\HTMLo\shradha khapra.jpeg" alt="woman" />
-        <div class="desc">
-            <h3>Shradha khapra</h3>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Form</title>
+</he ad>
 
-            <p>softwear developer</p>
+<body>
+    <form action="/server"> 
+        <div>
+            <label for="us">Enter your name: </label>
+            <input type="text" placeholder="Username" id="us">
         </div>
-    </div>
+        <div>
+            <label for="age">Enter age: </label>
+            <input type="number" placeholder="Age" id="age" min="0" max="150">
+        </div>
+        <div>
+            <label for="no">Enter Phone number: </label>
+            <input type="tel" placeholder="Phone number" id="no" pattern="[0-9]{10}" title="Format: 1234567890" required>
+        </div>
+        <div>
+            <label for="mail">Enter email: </label>
+            <input type="email" placeholder="Email" id="mail" title="Format: user@example.com" required>
+        </div>
+        <div>
+            <label for="pass">Enter Password: </label>
+            <input type="password" placeholder="Password" id="pass" minlength="8" maxlength="300" title="Format: enter minimum 8 charater or digit"required>
+        </div>
+
+        <button type="submit"> Submit </button>
+        <input type="button" value="cme">
+        <input type="submit">  <!-- not advicible -->
+        <br>
+        <button type="reset"> Reset</button>
+    
+    </form>
+
+    <hr>
+    <form action="https://www.google.com/search">
+        <label for="gg">Search on google </label>
+        <input type="text" placeholder="Search" id="gg" name="q">
+        <button type="submit"> Search </button>
+    </form> 
+    <br>
+
+    <form action="https://www.youtube.com/results">
+        <label for="yt">Search on YouTube </label>
+        <input type="text" placeholder="Search" id="yt" name="search_query">
+        <button type="submit"> Search </button>
+    </form>
+    <h5>By mj53</h5>
 </body>
 </html>
